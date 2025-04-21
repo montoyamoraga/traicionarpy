@@ -12,7 +12,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='traicionar',
-    version='0.0.1',
+    version='0.0.2',
     url='https://github.com/montoyamoraga/traicionar.py',
     author='montoyamoraga',
     license='MIT',
