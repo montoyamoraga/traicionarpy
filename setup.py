@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+import setuptools
 from codecs import open
 from os import path
 
@@ -9,17 +9,19 @@ here = path.abspath(path.dirname(__file__))
 with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
-setup(
+setuptools.setup(
     name='traicionar',
-    version='0.0.2',
-    url='https://github.com/montoyamoraga/traicionar.py',
+    version='0.0.3',
     author='montoyamoraga',
-    license='MIT',
+    author_email='montoyamoraga@gmail.com',
     description='library for electronic betrayal',
-    long_description='library for electronic betrayal',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url='https://github.com/montoyamoraga/traicionar.py',
+    packages=setuptools.find_packages(),
+    license='MIT',
     classifiers=[
+        "Programming Language :: Python :: 3",
         'Development Status :: 3 - Alpha',
     ],
-    programming_language='Python',
-
 )
